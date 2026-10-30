@@ -1,0 +1,14 @@
+Individual reflection
+
+Name: Pratik Dnyaneshwar Patil
+Project: DA-02 Customer 360 and Marketing Attribution Platform
+
+
+What I owned: On the dbt side, I ran the staging and mart models for dim_customer, fct_orders, customer_rfm, and campaign_roi. I fixed 16 duplicate order_id values and 397 rows with null revenue. On the Python side, I ran the attribution script that compares first-touch, last-touch, linear, and time-decay models. I read the output to see how channel credit shifted between the four models. On the Tableau side, I built four sheets: attribution comparison, campaign spend, and customer segments. For documentation, I filled in the test plan and recorded the results.
+
+What I learned:
+Data modelling: I learned to profile the raw data before modelling anything. The 16 duplicate order_ids and 397 null-revenue rows were small, but they flowed straight into the downstream aggregates and skewed every number built on them. Next time, the first thing I'd check is duplicate keys and nulls at the source.
+
+Attribution: I learned that no single model is "correct." Each one encodes a different assumption about what deserves credit, and the four models gave materially different channel rankings. Choosing a model is a business decision, not a technical one. I also learned the project's most important lesson: identity resolution is the foundation everything else rests on. The link rate came out at 0%, which means without a reliable identity link, the customer-level results aren't meaningful yet.
+
+Documentation: I learned that writing down what each model contains and how to run the pipeline forces you to check your own understanding. If you can't explain a model plainly, you probably don't fully understand it yet.

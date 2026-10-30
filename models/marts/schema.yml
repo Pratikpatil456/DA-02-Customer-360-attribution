@@ -1,0 +1,28 @@
+version: 2
+models:
+  - name: fct_orders
+    description: One row per completed purchase.
+    columns:
+      - name: order_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests: [not_null]
+      - name: revenue
+        tests: [not_null]
+  - name: customer_rfm
+    description: RFM scores and segment per customer over the trailing 90 days.
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: segment
+        tests:
+          - accepted_values:
+              values: ['Champions', 'Loyal', 'New or Promising', 'At Risk', 'Hibernating', 'Needs Attention']
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+  - name: campaign_roi
+    columns:
+      - name: channel
+        tests: [not_null, unique]

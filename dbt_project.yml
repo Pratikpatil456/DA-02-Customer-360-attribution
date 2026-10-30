@@ -1,0 +1,24 @@
+name: customer360
+version: '1.0.0'
+config-version: 2
+profile: customer360
+model-paths: ["models"]
+seed-paths: ["seeds"]
+target-path: "target"
+vars:
+  as_of_date: '2021-01-31'
+  lookback_days: 30
+models:
+  customer360:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table
+seeds:
+  customer360:
+    ga_identity_map:
+      +column_types:
+        user_pseudo_id: string
+        customer_id: string
