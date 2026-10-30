@@ -39,10 +39,10 @@ dbt marts                 Python attribution (first touch, last touch, linear, t
 | `python/generate_synthetic.py` | Creates CRM customers, the GA identity map and ad-spend seeds |
 | `python/attribution.py` | Four attribution models and the comparison table |
 | `python/tests/test_attribution.py` | Unit tests for the attribution logic |
-| `dbt/models/staging` | Cleaned GA4 events and seeds |
-| `dbt/models/intermediate` | Identity resolution and order-level touchpoints |
-| `dbt/models/marts` | Sessions, orders, customer profile, RFM segments and campaign ROI |
-| `dbt/models/marts/schema.yml` | Column documentation and dbt tests |
+| models/staging` | Cleaned GA4 events and seeds |
+| models/intermediate` | Identity resolution and order-level touchpoints |
+| models/marts` | Sessions, orders, customer profile, RFM segments and campaign ROI |
+| models/marts/schema.yml` | Column documentation and dbt tests |
 | `docs/dashboard_spec.md` | Tableau dashboard specification |
 | `docs/test_plan.md` | Test cases, results and notes |
 | `docs/test_results.txt` | Output of dbt, pytest and the attribution run |
