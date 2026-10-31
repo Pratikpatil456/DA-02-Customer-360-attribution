@@ -70,8 +70,8 @@ dbt marts                 Python attribution (first touch, last touch, linear, t
 
 | Item | Status |
 |---|---|
-| Working demo (published Tableau views) | Done: links in `docs/demo_link.txt` |
-| Repository structure, README and setup steps | Done (this file) |
+| Working demo | Done: [Watch Tableau Dashboard](https://public.tableau.com/app/profile/pratik.patil3536) |
+| Repository structure, README and setup steps | Done |
 | Architecture diagram and data documentation | Done (above and `dbt/models/marts/schema.yml`) |
 | Test results and performance notes | Done (`docs/test_plan.md`, `docs/test_results.txt`); run time not recorded |
 | 10-minute final presentation | Done (`DA-02_presentation_draft.pptx`) |
