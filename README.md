@@ -76,3 +76,4 @@ dbt marts                 Python attribution (first touch, last touch, linear, t
 | Test results and performance notes | Done (`docs/test_plan.md`, `docs/test_results.txt`); run time not recorded |
 | 10-minute final presentation | Done (`DA-02_presentation_draft.pptx`) |
 | Individual reflection | Done (`docs/reflection.txt`) |
+<!-- language: sql -->
